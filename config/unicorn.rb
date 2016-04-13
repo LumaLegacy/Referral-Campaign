@@ -1,24 +1,12 @@
-worker_processes 3
-timeout 30
-preload_app true
+#!/usr/bin/env puma
 
-before_fork do |server, worker|
+threads 2, 2
 
-  Signal.trap 'TERM' do
-    puts 'Unicorn master intercepting TERM and sending myself QUIT instead'
-    Process.kill 'QUIT', Process.pid
-  end
+workers 2
+worker_timeout 60
 
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.connection.disconnect!
-end
+rackup      DefaultRackup
+bind        "tcp://0.0.0.0:#{ENV.fetch('PORT', 3000)}"
+environment ENV['RACK_ENV'] || 'development'
 
-after_fork do |server, worker|
-
-  Signal.trap 'TERM' do
-    puts 'Unicorn worker intercepting TERM and doing nothing. Wait for master to sent QUIT'
-  end
-
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.establish_connection
-end
+preload_app!

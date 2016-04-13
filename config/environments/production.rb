@@ -60,7 +60,10 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'] }
+  config.action_controller.asset_host = 'https://jitjatjo-consumer.herokuapp.com'
+
+  # Default Mailer Host
+  Rails.application.routes.default_url_options[:host] = 'https://jitjatjo-consumer.herokuapp.com'
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
