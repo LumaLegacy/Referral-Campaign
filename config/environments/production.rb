@@ -60,10 +60,10 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_controller.asset_host = 'https://jitjatjo-consumer.herokuapp.com'
+  config.action_controller.asset_host = 'https://lumalegacy-prelaunch.herokuapp.com'
 
   # Default Mailer Host
-  Rails.application.routes.default_url_options[:host] = 'https://jitjatjo-consumer.herokuapp.com'
+  Rails.application.routes.default_url_options[:host] = 'https://lumalegacy-prelaunch.herokuapp.com'
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
