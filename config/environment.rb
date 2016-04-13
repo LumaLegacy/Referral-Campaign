@@ -4,8 +4,6 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 Prelaunchr::Application.initialize!
 
-Rails.logger = Logger.new(STDOUT)
-
 ActionMailer::Base.smtp_settings = {
   :user_name => Rails.application.secrets.sendgrid_username,
   :password => Rails.application.secrets.sendgrid_password,
