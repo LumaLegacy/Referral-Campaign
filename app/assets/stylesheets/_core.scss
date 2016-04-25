@@ -42,8 +42,6 @@ html.home{
 #home .hero .large{
 	font-weight: bold;
 	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
 	margin: 85px 0 0 136px;
 	position: relative;
 	z-index: 2;
@@ -52,13 +50,11 @@ html.home{
 
 #home .hero .small{
 	font-weight: bold;
-	color: #955F5D;
 	font-size: 18px;
 	margin: 10px 0 0 115px;
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
-	text-transform: uppercase;
 	text-align: center;
 	width: 375px;
 	letter-spacing: 1px;
@@ -100,7 +96,7 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #596cf3;
 	float: left;
 	height: 37px;
 	line-height: 37px;
@@ -232,7 +228,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -248,40 +244,42 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #F1F0EE;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
 	position: relative;
+	border-bottom: 1px solid #b0b9f3;
 }
 
 #refer .header .content{
-	width: 315px;
+	width: 515px;
 	margin: 0 auto;
 }
 
 #refer .header p{
 	float: left;
-	color: #FFF;
+	color: #000000;
 	font-weight: 500;
-	text-transform: uppercase;
 	line-height: 50px;
 }
 
 #refer .header .byline{
-	font-size: 14px;
+	font-size: 18px;
+	line-height: 47px;
+	font-weight: 500;
 }
 
 #refer .header .logo{
 	font-weight: normal;
 	font-size: 0;
 	line-height: 0;
-	margin-right: 14px;
+	margin-right: 30px;
 	letter-spacing: 1px;
 	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
+	background-size: 204px 18px;
+	height: 18px;
+	width: 204px;
 	margin-top: 15px;
 }
 
@@ -317,8 +315,7 @@ html.home{
 #refer .share-wrap{
 	float: right;
 	width: 400px;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: left;
 	letter-spacing: .13em;
 	margin-right: 60px;
 }
@@ -331,11 +328,10 @@ html.home{
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 40px;
-	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #000000;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -403,11 +399,10 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #596cf3;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 
 #refer .prizes .progress{
@@ -451,7 +446,7 @@ html.home{
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #000000;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
@@ -627,7 +622,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .header .logo{
 		background: image-url("refer/logo@2x.png") 0 0 no-repeat;
-		background-size: 106px 19px;
+		background-size: 204px 18px;
 	}
 
 	#refer .mammoth{
