@@ -14,7 +14,7 @@ namespace :prelaunchr do
       end
     end
 
-    CSV.open("#{Rails.root}/lib/assets/winners.csv", 'wb') do |csv|
+    CSV.open("#{Rails.root}/public/winners.csv", 'wb') do |csv|
       winner_count.times do
         csv << [all_emails.sample]
       end
