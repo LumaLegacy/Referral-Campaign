@@ -702,13 +702,17 @@ html.home{
   }
 
   #refer .prizes .products li.product {
-    width: 30%;
+    width: 22%;
     padding: 1.5%;
     margin-right: 0px;
   }
 
   #refer .prizes p.place {
     margin-top: 250px;
+  }
+
+  #refer .prize-two .progress .mover .bar {
+    width: 192px;
   }
 
 }
@@ -780,6 +784,7 @@ html.home{
 
   #refer .prizes ul.products {
     padding-left: 0px;
+    display: none;
   }
 
   #refer .prizes .products li.product {
@@ -789,8 +794,13 @@ html.home{
   }
 
   #refer .prizes p.place {
-    margin-top: 300px;
+    /*margin-top: 300px;*/
   }
+
+  #refer .prizes .progress, #refer .mob-prizes .progress {
+    display: none;
+  }
+
 
 }
 
@@ -839,13 +849,13 @@ html.home{
     display: none;
   }
 
-  #refer .prizes p.place {
+  /*#refer .prizes p.place {
     margin-top: 600px;
-  }
+  }*/
 
-  .prizes {
+  /*.prizes {
     display: none;
-  }
+  }*/
 
   .mob-prizes {
     display: initial;
