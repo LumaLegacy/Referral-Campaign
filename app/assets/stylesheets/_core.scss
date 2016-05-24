@@ -91,6 +91,7 @@ html.home{
   height: 80px;
   width: 550px;
   margin: 0px auto;
+  margin-top: 20px;
 }
 
 #home .form-wrap .key{
@@ -813,6 +814,10 @@ html.home{
     background: url(/assets/home/new-480.jpg) center center no-repeat;
   }
 */
+
+#home .hero .small {
+  width: 95%;
+}
 
 #refer .mammoth{
   width: 100%;
